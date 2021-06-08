@@ -1,4 +1,5 @@
 import pytest
+from pytest import approx
 
 
 temperature = 10
@@ -10,4 +11,4 @@ def add(a, b):
 
 
 def test_add():
-    assert add(0.1, 0.2) == 0.3
+    assert add(0.1, 0.2) = approx(0.3)
